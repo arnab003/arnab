@@ -10,6 +10,7 @@
 <div align="center">
 <br>
 <h2>Student Registration Form</h2>
+<hr width="25%">
 <table cellpadding="5" cellspacing="5">
 
 	<tr>
@@ -35,8 +36,8 @@
 	<tr>
 		<td>Course</td>
 		<td>
-			<select name="Course">
-				<option value="-1" selected>select..</option>
+			<select name="Course" required>
+				<option value="">select..</option>
 				<option value="B.Tech">B.TECH</option>
 				<option value="MCA">MCA</option>
 				<option value="MBA">MBA</option>
@@ -48,8 +49,8 @@
 	<tr>
 		<td>City</td>
 		<td>
-			<select name="City">
-				<option value="-1" selected>select..</option>
+			<select name="City" required>
+				<option value="">select..</option>
 				<option value="Chennai">Chennai</option>
 				<option value="Kolkata">Kolkata</option>
 				<option value="Mumbai">Mumbai</option>
@@ -61,8 +62,8 @@
 	<tr>
 		<td>State</td>
 		<td>
-			<select Name="State">
-				<option value="-1" selected>select..</option>
+			<select Name="State" required>
+				<option value="">select..</option>
 				<option value="Tamil Nadu">Tamil Nadu</option>
 				<option value="West Bengal">West Bengal</option>
 				<option value="Maharashtra">Maharashtra</option>
@@ -83,7 +84,7 @@
 
 	<tr>
 		<td>DOB</td>
-		<td><input type="date" name="dob" id="dob" required></td>
+		<td><input type="date" name="dob" id="dob" min="1964-12-31" max="2014-12-31" required></td>
 	</tr>
 
 	<tr>
